@@ -1,4 +1,26 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+.cannon {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    &.cannon-left {
+        background-image: url("images/cannon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotateY(180deg) rotateZ(0deg);
+        left: -80px;
+    }
+    &.cannon-right {
+        background-image: url("images/cannon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotateZ(0deg);
+        right: -80px;
+    }
 }
